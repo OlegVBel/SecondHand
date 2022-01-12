@@ -1,6 +1,8 @@
 html {
   box-sizing: border-box;
   --main-color: #272727;
+  --body-white: #fff;
+  --bg-gray: #f5f5f5;
 }
 
 *,
