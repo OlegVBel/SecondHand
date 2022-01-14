@@ -8,9 +8,7 @@
   font-size: 18px;
   line-height: 22px;
 }
-.navigation__item:hover {
-  font-weight: 400;
-}
+.navigation__item:hover::after,
 .navigation__item:active::after,
 .navigation__item:focus::after {
   content: "";

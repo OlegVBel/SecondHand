@@ -41,12 +41,12 @@
   line-height: 15px;
 }
 
-.search__active .search__input {
+.search_active .search__input {
   transform: scaleX(1);
   padding: 14px 30px;
 }
 
-.search__active .search__button {
+.search_active .search__button {
   border-radius: 0 20px 20px 0;
 }
 
@@ -66,9 +66,13 @@
   transition: opacity 0.4s ease-in;
   z-index: 3;
 }
-.search__active .search__close:hover,
-.search__active .search__close:focus,
-.search__active .search__close:active {
+.search_active .search__close {
+  visibility: visible;
+  opacity: 0.4;
+}
+.search_active .search__close:hover,
+.search_active .search__close:focus,
+.search_active .search__close:active {
   opacity: 1;
 }
 
