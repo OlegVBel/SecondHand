@@ -1,4 +1,4 @@
-const searchControl = ({ selectorBtn, selectorForm, classActive, selectorClose }) => {
+const searchControl = ({ selectorBtn, selectorForm, classActive, selectorClose, breakpoint }) => {
 
   const btn = document.querySelector(selectorBtn);
   const form = document.querySelector(selectorForm);
@@ -19,6 +19,11 @@ const searchControl = ({ selectorBtn, selectorForm, classActive, selectorClose }
   btn.addEventListener('click', activeForm);
   close.addEventListener('click', deactiveForm);
 
+  if (document.documentElement.clientWidth > 760) {
+    btn.addEventListener('click', activeForm);
+  } else {
+    btn.type = 'sumbit';
+  }
 };
 
 export default searchControl;

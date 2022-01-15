@@ -78,12 +78,18 @@
   .navigation_active .navigation__list {
     height: auto;
     padding-bottom: 13px;
+    z-index: 3;
   }
 
   .navigation__item {
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
+  }
+  .navigation__item:hover::after,
+  .navigation__item:active::after,
+  .navigation__item:focus::after {
+    content: none;
   }
 }
 
