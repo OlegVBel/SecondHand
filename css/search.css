@@ -34,7 +34,7 @@
   border: none;
   border-radius: 20px 0 0 20px;
   transform: scaleX(0);
-  transition: transform 0.24s ease-in 0.2s;
+  transition: transform 0.4s ease-in-out;
   transform-origin: right;
   background-color: var(--gray-color);
   font-size: 12px;
@@ -44,10 +44,12 @@
 .search_active .search__input {
   transform: scaleX(1);
   padding: 14px 30px;
+  transition: transform 0.4s ease-in-out 0.2s;
 }
 
 .search_active .search__button {
   border-radius: 0 20px 20px 0;
+  transition: border-radius 0.2s ease-in-out, background-color 0.24s ease;
 }
 
 .search__close {
@@ -74,6 +76,12 @@
 .search_active .search__close:focus,
 .search_active .search__close:active {
   opacity: 1;
+}
+
+@media (max-width: 1000px) {
+  .search__input {
+    width: 400px;
+  }
 }
 
 @media (max-width: 760px) {

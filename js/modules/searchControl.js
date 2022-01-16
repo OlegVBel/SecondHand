@@ -3,7 +3,6 @@ const searchControl = ({ selectorBtn, selectorForm, classActive, selectorClose, 
   const btn = document.querySelector(selectorBtn);
   const form = document.querySelector(selectorForm);
   const close = document.querySelector(selectorClose);
-  console.log(btn, form, close);
   const activeForm = () => {
     form.classList.add(classActive);
     btn.removeEventListener('click', activeForm);
@@ -21,6 +20,7 @@ const searchControl = ({ selectorBtn, selectorForm, classActive, selectorClose, 
 
   if (document.documentElement.clientWidth > 760) {
     btn.addEventListener('click', activeForm);
+    close.addEventListener('click', deactiveForm);
   } else {
     btn.type = 'sumbit';
   }
