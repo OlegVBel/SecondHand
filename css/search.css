@@ -17,7 +17,7 @@
   background-color: var(--gray-color);
   border-radius: 20px;
   will-change: border-radius;
-  transition: border-radius 0.2s ease-in, background-color 0.5s ease;
+  transition: border-radius 0.4s ease-in, background-color 0.5s ease;
   border: none;
   z-index: 2;
 }
