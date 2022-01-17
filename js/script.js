@@ -1,11 +1,11 @@
-import burgerMenu from "./modules/burgerMenu.js";
-import searchControl from "./modules/searchControl.js";
-import selectControl from "./modules/selectControl.js";
-import slider from "./modules/slider.js";
-import renderGoods from "./modules/renderGoods.js";
-import interceptLink from "./modules/interceptLink.js";
-import itemModal from "./modules/itemModal.js";
-import addFavorite from "./modules/addFavorite.js";
+import burgerMenu from "../js/modules/burgerMenu.js";
+import searchControl from "../js/modules/searchControl.js";
+import selectControl from "../js/modules/selectControl.js";
+import slider from "../js/modules/slider.js";
+import renderGoods from "../js/modules/renderGoods.js";
+import interceptLink from "../js/modules/interceptLink.js";
+import itemModal from "../js/modules/itemModal.js";
+import addFavorite from "../js/modules/addFavorite.js";
 
 burgerMenu({
   selectorBtn: '.navigation__btn',
