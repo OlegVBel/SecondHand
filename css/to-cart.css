@@ -1,0 +1,24 @@
+.to-cart {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  border: none;
+  padding: 8px;
+}
+.to-cart:hover {
+  background-color: #464343;
+}
+.to-cart:focus {
+  padding: 7px;
+  background-color: var(--gray-color);
+  color: var(--black-color);
+  border: 1px solid var(--black-color);
+}
+.to-cart:active {
+  padding: 7px;
+  background-color: var(--white-color);
+  color: var(--black-color);
+  border: 1px solid var(--black-color);
+}
